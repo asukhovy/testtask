@@ -13,6 +13,6 @@ public class QName {
     }
 
     String getAsString() {
-        return ((( prefix != null && prefix.equals("") )?( prefix + ":" ):( "" )) + localName);
+        return ((( prefix != null && !prefix.equals("") )?( prefix + ":" ):( "" )) + localName);
     }
 }
